@@ -20,7 +20,7 @@
 TARGET_OTA_ASSERT_DEVICE := v410
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogen_e7wifi_defconfig
+TARGET_KERNEL_CONFIG := cyanogen_e7att_defconfig
 
 # inherit from the proprietary version
 -include vendor/lge/v410/BoardConfigVendor.mk
