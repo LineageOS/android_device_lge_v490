@@ -7,4 +7,4 @@ rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ro.telephony.default_network=9
 ro.telephony.ril_class=LgeLteRIL
 ro.use_data_netmgrd=true
-telephony.lteOnCdmaDevice=1
+telephony.lteOnCdmaDevice=0
