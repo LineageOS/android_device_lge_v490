@@ -23,8 +23,5 @@ $(call inherit-product-if-exists, vendor/lge/v410/v410-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # common v4xx
 $(call inherit-product, device/lge/v4xx-common/v4xx.mk)
