@@ -19,9 +19,6 @@
 
 TARGET_OTA_ASSERT_DEVICE := v410,e7,e7lte
 
-# Bump
-TARGET_REQUIRES_BUMP := true
-
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogen_e7att_defconfig
 
