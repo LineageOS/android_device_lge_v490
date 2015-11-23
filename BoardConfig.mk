@@ -27,6 +27,3 @@ TARGET_KERNEL_CONFIG := cyanogen_e7att_defconfig
 
 # inherit from the proprietary version
 -include vendor/lge/v410/BoardConfigVendor.mk
-
-# RIL
-BOARD_RIL_CLASS := ../../../device/lge/v410/ril/
