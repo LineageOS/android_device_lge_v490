@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/v410/v410-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/v490/v490-vendor.mk)
 
 # Media
 PRODUCT_COPY_FILES += \

@@ -1,5 +1,5 @@
-
-# Copyright (C) 2014 The CyanogenMod Project
+#
+# Copyright 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +14,15 @@
 # limitations under the License.
 #
 
-# inherit from common v4xx
--include device/lge/v4xx-common/BoardConfigCommon.mk
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-TARGET_OTA_ASSERT_DEVICE := v490,e8,e8lte
+# Inherit from v410 device
+$(call inherit-product, device/lge/v410/device.mk)
 
-# Kernel
-TARGET_KERNEL_CONFIG := cyanogen_e8lte_defconfig
-
-# inherit from the proprietary version
--include vendor/lge/v490/BoardConfigVendor.mk
+# Set those variables here to overwrite the inherited values.
+PRODUCT_DEVICE := v410
+PRODUCT_NAME := full_v410
+PRODUCT_BRAND := lge
+PRODUCT_MODEL := LG-v410
+PRODUCT_MANUFACTURER := LGE
