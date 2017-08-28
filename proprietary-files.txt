@@ -1,3 +1,8 @@
+# Thermal daemon
+bin/thermal-engine
+vendor/lib/libthermalclient.so
+vendor/lib/libthermalioctl.so
+
 # Venus firmware
 etc/firmware/venus.b00
 etc/firmware/venus.b01
